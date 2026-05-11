@@ -1,0 +1,24 @@
+HTML
+
+Copied
+<script>
+  Sentry.init({
+    dsn: "https://fbdf9c4c9e1fcb38c0847bc90535a121@o4511371005853696.ingest.us.sentry.io/4511371012145152",
+    integrations: [
+      Sentry.feedbackIntegration({
+        themeLight: {
+          foreground: "#000",
+        },
+        themeDark: {
+          foreground: "#fff",
+        },
+      }),
+    ],
+  });
+</script>
+
+<style>
+  #sentry-feedback {
+    --foreground: "red"; /* overrides both `#fff` and `#000` above */
+  }
+</style>
